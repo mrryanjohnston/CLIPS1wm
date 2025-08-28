@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+exec >> "$HOME/.CLIPSmwm" 2>&1
+exec @CLIPSX11@ -f2 @DATADIR@/CLIPSmwm.bat

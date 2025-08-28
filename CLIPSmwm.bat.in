@@ -1,0 +1,13 @@
+(watch all)
+; system-wide CLIPSX11 data
+;(load "@SYSDIR@/deftemplates.clp")
+(load "@SYSDIR@/defclasses.clp")
+
+; wm-specific data
+;(load "@DATADIR@/CLIPSmwm.multifield.clp")
+;(load "@DATADIR@/CLIPSmwm.fact.clp")
+(load "@DATADIR@/CLIPSmwm.instance.clp")
+
+(run)
+(exit)
+(reset)
