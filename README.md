@@ -17,6 +17,14 @@ first (version 0.1.0).
 sudo make install
 ```
 
+## Usage
+
+On my keyboard, `Mod4` is mapped to the Windows Key.
+
+- `Mod4 + e` - Runs [`dmenu`](https://tools.suckless.org/dmenu/)
+- `Mod4 + n` - Switches windows
+- `Mod4 + q` - Closes currently focused window
+
 ## Details
 
 There are three files that provide an example window manager
@@ -29,14 +37,14 @@ The `deftemplates.clp` file is necessary if you use the `CLIPSmwm.fact.clp` file
 The third file `CLIPSmwm.instance.clp` makes them as CLIPS Instances.
 The `defclasses.clp` file is necessary if you use the `CLIPSmwm.instance.clp` file.
 
-#### Display Managers
+### Display Managers
 
 If you want to install this to your machine, use `sudo make install`
 to install a `CLIPSX11` to your `/usr/local/bin` dir.
 This will also attempt to install the `CLIPSmwm.desktop` file
 into your `/usr/share/xsessions` dir.
 
-#### Via `startx`
+### Via `startx`
 
 Run `sudo make install` and add this to the end of your `.xinitrc`:
 
