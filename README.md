@@ -1,7 +1,7 @@
-# CLIPSmwm
+# CLIPS1wm
 
 A minimal
-[mwm](https://github.com/lslvr/mwm)-like
+[1wm](https://github.com/lslvr/1wm)-like
 X11 window manager implemented in
 [CLIPS](https://clipsrules.net/)
 using the
@@ -27,30 +27,30 @@ On my keyboard, `Mod4` is mapped to the Windows Key.
 
 ## Details
 
-To see the "default" implementation of CLIPSmwm,
-check out `CLIPSmwm.instance.clp`
+To see the "default" implementation of CLIPS1wm,
+check out `CLIPS1wm.instance.clp`
 which uses COOL (CLIPS Object Oriented Language) Instances
 to represent `XEvents`.
 
 There are three files that provide an example window manager
-based on [mwm](https://github.com/lslvr/mwm).
-The first file `CLIPSmwm.multifield.clp` takes the output from
+based on [1wm](https://github.com/lslvr/1wm).
+The first file `CLIPS1wm.multifield.clp` takes the output from
 X11 functions and returns them as CLIPS Multifields
 and asserts implied Facts.
-The second file `CLIPSmwm.fact.clp` asserts them directly as CLIPS Facts.
+The second file `CLIPS1wm.fact.clp` asserts them directly as CLIPS Facts.
 The
 [`deftemplates.clp`](https://github.com/mrryanjohnston/CLIPSX11/blob/main/deftemplates.clp)
-file is necessary if you use the `CLIPSmwm.fact.clp` file.
-The third file `CLIPSmwm.instance.clp` makes them as COOL Instances.
+file is necessary if you use the `CLIPS1wm.fact.clp` file.
+The third file `CLIPS1wm.instance.clp` makes them as COOL Instances.
 The
 [`defclasses.clp`](https://github.com/mrryanjohnston/CLIPSX11/blob/main/defclasses.clp)
-file is necessary if you use the `CLIPSmwm.instance.clp` file.
+file is necessary if you use the `CLIPS1wm.instance.clp` file.
 
 ### Display Managers
 
 If you want to install this to your machine, use `sudo make install`
 to install a `CLIPSX11` to your `/usr/local/bin` dir.
-This will also attempt to install the `CLIPSmwm.desktop` file
+This will also attempt to install the `CLIPS1wm.desktop` file
 into your `/usr/share/xsessions` dir.
 
 ### Via `startx`
@@ -58,5 +58,5 @@ into your `/usr/share/xsessions` dir.
 Run `sudo make install` and add this to the end of your `.xinitrc`:
 
 ```
-exec CLIPSmwm
+exec CLIPS1wm
 ```

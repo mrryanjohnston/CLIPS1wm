@@ -2,15 +2,15 @@ PREFIX        ?= /usr/local
 BINDIR        := $(PREFIX)/bin
 XSESSIONSDIR  := $(PREFIX)/share/xsessions
 
-TARGET_CLIPSMWM := CLIPSmwm
+TARGET_CLIPSMWM := CLIPS1wm
 DESTINATION     := $(TARGET_CLIPSMWM)
 SHELL_SCRIPT    := $(TARGET_CLIPSMWM)
 DESKTOP         := $(TARGET_CLIPSMWM).desktop
 
 DATADIR         := $(PREFIX)/share/$(TARGET_CLIPSMWM)
 DATAFILES       := $(wildcard *.clp)
-BAT_TEMPLATE    := CLIPSmwm.bat.in
-BAT_OUT         := CLIPSmwm.bat
+BAT_TEMPLATE    := CLIPS1wm.bat.in
+BAT_OUT         := CLIPS1wm.bat
 
 CLIPSX11_BIN    ?= $(BINDIR)/CLIPSX11
 REQUIRED_CLIPSX11_VERSION ?= 0.1.0
@@ -28,7 +28,7 @@ check-deps:
 	fi
 	@found="$$( $(CLIPSX11_BIN) --version 2>/dev/null | awk '{print $$2}' )"; \
 	if [ "$$found" != "$(REQUIRED_CLIPSX11_VERSION)" ]; then \
-	  echo "Error: CLIPSmwm requires CLIPSX11 $(REQUIRED_CLIPSX11_VERSION), found $$found."; \
+	  echo "Error: CLIPS1wm requires CLIPSX11 $(REQUIRED_CLIPSX11_VERSION), found $$found."; \
 	  exit 1; \
 	fi
 

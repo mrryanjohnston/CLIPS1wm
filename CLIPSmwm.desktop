@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=CLIPSmwm
-Comment=A CLIPS implementation of mwm, an X11 window manager
-Exec=CLIPSmwm
-Type=Application

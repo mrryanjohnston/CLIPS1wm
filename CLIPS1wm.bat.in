@@ -4,9 +4,9 @@
 (load "@SYSDIR@/defclasses.clp")
 
 ; wm-specific data
-;(load "@DATADIR@/CLIPSmwm.multifield.clp")
-;(load "@DATADIR@/CLIPSmwm.fact.clp")
-(load "@DATADIR@/CLIPSmwm.instance.clp")
+;(load "@DATADIR@/CLIPS1wm.multifield.clp")
+;(load "@DATADIR@/CLIPS1wm.fact.clp")
+(load "@DATADIR@/CLIPS1wm.instance.clp")
 
 (run)
 (exit)
