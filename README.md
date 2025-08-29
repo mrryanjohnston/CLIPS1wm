@@ -27,15 +27,24 @@ On my keyboard, `Mod4` is mapped to the Windows Key.
 
 ## Details
 
+To see the "default" implementation of CLIPSmwm,
+check out `CLIPSmwm.instance.clp`
+which uses COOL (CLIPS Object Oriented Language) Instances
+to represent `XEvents`.
+
 There are three files that provide an example window manager
 based on [mwm](https://github.com/lslvr/mwm).
 The first file `CLIPSmwm.multifield.clp` takes the output from
 X11 functions and returns them as CLIPS Multifields
 and asserts implied Facts.
 The second file `CLIPSmwm.fact.clp` asserts them directly as CLIPS Facts.
-The `deftemplates.clp` file is necessary if you use the `CLIPSmwm.fact.clp` file.
-The third file `CLIPSmwm.instance.clp` makes them as CLIPS Instances.
-The `defclasses.clp` file is necessary if you use the `CLIPSmwm.instance.clp` file.
+The
+[`deftemplates.clp`](https://github.com/mrryanjohnston/CLIPSX11/blob/main/deftemplates.clp)
+file is necessary if you use the `CLIPSmwm.fact.clp` file.
+The third file `CLIPSmwm.instance.clp` makes them as COOL Instances.
+The
+[`defclasses.clp`](https://github.com/mrryanjohnston/CLIPSX11/blob/main/defclasses.clp)
+file is necessary if you use the `CLIPSmwm.instance.clp` file.
 
 ### Display Managers
 
@@ -49,5 +58,5 @@ into your `/usr/share/xsessions` dir.
 Run `sudo make install` and add this to the end of your `.xinitrc`:
 
 ```
-exec CLIPSmwm.sh
+exec CLIPSmwm
 ```
