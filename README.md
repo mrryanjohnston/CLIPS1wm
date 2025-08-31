@@ -10,7 +10,7 @@ using the
 ## Install
 1. Install
 [`CLIPSX11`](https://github.com/mrryanjohnston/CLIPSX11)
-first (version 0.1.0).
+first (version 0.2.0).
 2. Then:
 
 ```sh
